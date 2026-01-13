@@ -2,7 +2,7 @@
 
 This project is about showcasing Dynamic Polymorphism that an application can have both Jdbc & Jpa templates and application.yaml file decides which template to choose.
 
-The application is on Product and came in weekly assessment 4.
+The application is on Employee.
 
 It can insert and getAll employee details, currently running on port 8082 with the endpoint '/employees'.
 
