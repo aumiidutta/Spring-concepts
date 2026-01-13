@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: dypoly
+  datasource:
+    url: jdbc:mysql://localhost/mydb
+    username: root
+    password: Root123$
+  session:
+    jdbc:
+      initialize-schema: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        dialect: org.hibernate.dialect.MySQLDialect
+        show-sql: true
+
+server:
+  port: 8082
+
+app:
+  persistenceType: jpa

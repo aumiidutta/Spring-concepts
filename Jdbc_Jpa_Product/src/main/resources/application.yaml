@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: JDBC JPA polymorphism
+  datasource:
+    url: jdbc:mysql://localhost/mydb
+    username: root
+    password: Root123$
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        dialect: org.hibernate.dialect.MySQLDialect
+        show-sql: true
+  session:
+    jdbc:
+      initialize-schema: always
+
+server:
+  port: 8081
+app:
+  persistenceType: jpa
